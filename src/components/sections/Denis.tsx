@@ -8,7 +8,7 @@ export function Denis() {
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center">
           <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden border border-border/60 max-w-md mx-auto lg:mx-0 w-full shadow-xl">
             <Image
-              src="/img/denis.jpg"
+              src="/img/denis-portrait.jpg"
               alt="Денис — основатель школы «Живая речь»"
               fill
               className="object-cover"
