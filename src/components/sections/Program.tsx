@@ -97,52 +97,55 @@ export function Program() {
         <div className="rounded-[2rem] bg-foreground text-background overflow-hidden">
           <div className="grid lg:grid-cols-2">
             {/* Левая часть: цена */}
-            <div className="p-8 lg:p-12">
-              <div className="flex flex-wrap items-start justify-between gap-4 mb-8">
-                <div>
-                  <h3 className="font-display text-3xl md:text-4xl font-semibold leading-tight mb-1">
+            <div className="p-5 sm:p-8 lg:p-12 min-w-0">
+              <div className="flex flex-wrap items-start justify-between gap-4 mb-6 sm:mb-8">
+                <div className="min-w-0">
+                  <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight mb-1">
                     Стоимость курса
                   </h3>
-                  <div className="text-background/60 text-sm">
+                  <div className="text-background/60 text-xs sm:text-sm">
                     Ступень 1. База — 1 месяц, 8 занятий
                   </div>
                 </div>
-                <div className="text-right text-sm">
-                  <div className="text-background/60">Старт курса</div>
-                  <div className="font-semibold text-base">1 мая</div>
+                <div className="text-right text-xs sm:text-sm">
+                  <div className="text-background/60">Старт</div>
+                  <div className="font-semibold text-sm sm:text-base">1 мая</div>
                   <div className="text-background/60 mt-2">Осталось</div>
-                  <div className="font-semibold text-base">7 мест</div>
+                  <div className="font-semibold text-sm sm:text-base">7 мест</div>
                 </div>
               </div>
 
               {/* Акционный блок */}
-              <div className="rounded-2xl bg-accent/15 border border-accent/30 p-5 mb-6">
-                <div className="flex items-center gap-2 text-accent font-medium">
-                  <Sparkles className="h-4 w-4" />
-                  <span className="text-sm">
+              <div className="rounded-2xl bg-accent/15 border border-accent/30 p-4 sm:p-5 mb-5 sm:mb-6">
+                <div className="flex items-start gap-2 text-accent font-medium">
+                  <Sparkles className="h-4 w-4 flex-shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm leading-tight">
                     Специальная цена первого потока — до 1 мая
                   </span>
                 </div>
               </div>
 
               {/* Цена */}
-              <div className="rounded-2xl bg-background/5 border border-background/10 p-6 mb-6">
-                <div className="flex items-baseline gap-4 mb-2">
-                  <span className="text-background/40 line-through text-xl">
+              <div className="rounded-2xl bg-background/5 border border-background/10 p-5 sm:p-6 mb-5 sm:mb-6 min-w-0">
+                <div className="flex flex-wrap items-baseline gap-2 sm:gap-4 mb-2">
+                  <span className="text-background/40 line-through text-lg sm:text-xl">
                     2 500 ₽/мес
                   </span>
                   <span className="text-xs bg-accent text-foreground font-semibold px-2 py-1 rounded-full">
                     −50%
                   </span>
                 </div>
-                <div className="font-display text-5xl md:text-6xl font-semibold mb-2 leading-none">
-                  1 250 <span className="text-3xl md:text-4xl text-background/70">₽/мес</span>
+                <div className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold mb-2 leading-none">
+                  1 250{" "}
+                  <span className="text-2xl sm:text-3xl md:text-4xl text-background/70">
+                    ₽/мес
+                  </span>
                 </div>
-                <div className="text-background/60 text-sm mb-4">
+                <div className="text-background/60 text-xs sm:text-sm mb-4 leading-snug">
                   в рассрочку на 12 месяцев · без процентов и переплат
                 </div>
-                <div className="pt-4 border-t border-background/10 text-sm space-y-1">
-                  <div className="flex justify-between text-background/80">
+                <div className="pt-4 border-t border-background/10 text-xs sm:text-sm space-y-1">
+                  <div className="flex flex-wrap justify-between gap-2 text-background/80">
                     <span className="font-medium">Или полная оплата</span>
                     <span>
                       <span className="text-background/40 line-through mr-2">
@@ -158,19 +161,19 @@ export function Program() {
               </div>
 
               {/* Бонус */}
-              <div className="rounded-2xl bg-primary/15 border border-primary/30 p-5">
+              <div className="rounded-2xl bg-primary/15 border border-primary/30 p-4 sm:p-5">
                 <div className="flex items-start gap-3">
                   <Gift className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="font-semibold">
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap items-center gap-2 mb-1">
+                      <span className="font-semibold text-sm sm:text-base">
                         Бонус при оплате сразу
                       </span>
                       <span className="text-xs bg-primary text-white px-2 py-0.5 rounded-full font-medium">
                         выгода 4 000 ₽
                       </span>
                     </div>
-                    <div className="text-sm text-background/75">
+                    <div className="text-xs sm:text-sm text-background/75 leading-snug">
                       Месяц Клуба импровизации (4 встречи по вторникам) в
                       подарок параллельно с курсом — чтобы быстрее закрепить
                       навык.
@@ -181,11 +184,11 @@ export function Program() {
             </div>
 
             {/* Правая часть: CTA + что входит */}
-            <div className="p-8 lg:p-12 bg-background/[0.03] border-t lg:border-t-0 lg:border-l border-background/10">
-              <h4 className="font-display text-xl font-semibold mb-6">
+            <div className="p-5 sm:p-8 lg:p-12 bg-background/[0.03] border-t lg:border-t-0 lg:border-l border-background/10 min-w-0">
+              <h4 className="font-display text-lg sm:text-xl font-semibold mb-5 sm:mb-6">
                 Что входит в курс
               </h4>
-              <div className="space-y-3 mb-8">
+              <div className="space-y-3 mb-7 sm:mb-8">
                 {[
                   "8 живых занятий по 3 часа — 2 раза в неделю, месяц",
                   "Группа до 30 человек — живая энергия и разнообразие",
@@ -194,27 +197,31 @@ export function Program() {
                   "Финальное выступление с разбором",
                   "Сертификат об окончании",
                 ].map((i) => (
-                  <div key={i} className="flex gap-3 text-sm">
+                  <div key={i} className="flex gap-3 text-xs sm:text-sm">
                     <Check className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-background/85">{i}</span>
+                    <span className="text-background/85 leading-snug">{i}</span>
                   </div>
                 ))}
               </div>
 
               <div className="space-y-3">
-                <PayButton productId="course-step1" className="w-full">
-                  Оплатить сразу · 15 000 ₽ + клуб в подарок
-                  <CreditCard className="h-5 w-5" />
+                <PayButton
+                  productId="course-step1"
+                  className="w-full text-sm sm:text-base px-4 whitespace-normal h-auto min-h-[3rem] py-3 leading-tight"
+                >
+                  <span className="flex-1 text-left sm:text-center">
+                    Оплатить · 15 000 ₽ + клуб в подарок
+                  </span>
+                  <CreditCard className="h-5 w-5 flex-shrink-0" />
                 </PayButton>
                 <a href="#contact" className="block">
-                  <button className="w-full h-12 rounded-full border border-background/20 text-background hover:bg-background/5 transition text-sm font-medium flex items-center justify-center gap-2">
+                  <button className="w-full h-12 rounded-full border border-background/20 text-background hover:bg-background/5 transition text-xs sm:text-sm font-medium flex items-center justify-center gap-2">
                     или записаться на консультацию
                     <ArrowRight className="h-4 w-4" />
                   </button>
                 </a>
-                <p className="text-xs text-background/50 text-center mt-3">
-                  Возврат 100% стоимости до 3-го занятия — если формат не
-                  подошёл
+                <p className="text-xs text-background/50 text-center mt-3 leading-snug">
+                  Возврат 100% стоимости до 3-го занятия
                 </p>
               </div>
             </div>
