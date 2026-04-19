@@ -135,8 +135,20 @@ export function Contact() {
                   <Send className="h-4 w-4" />
                 </Button>
                 <p className="text-xs text-muted mt-4 text-center">
-                  Нажимая кнопку, ты соглашаешься на обработку персональных
-                  данных
+                  Нажимая кнопку, ты соглашаешься на{" "}
+                  <a
+                    href="/privacy"
+                    className="underline hover:text-foreground"
+                  >
+                    обработку персональных данных
+                  </a>{" "}
+                  и{" "}
+                  <a
+                    href="/offer"
+                    className="underline hover:text-foreground"
+                  >
+                    условия оферты
+                  </a>
                 </p>
               </>
             )}

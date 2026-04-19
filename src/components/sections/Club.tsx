@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "../ui/Container";
-import { Button } from "../ui/Button";
-import { Calendar, MapPin, Users2 } from "lucide-react";
+import { PayButton } from "../PayButton";
+import { Calendar, MapPin, Users2, CreditCard } from "lucide-react";
 
 export function Club() {
   return (
@@ -42,13 +42,14 @@ export function Club() {
             </div>
 
             <div className="flex flex-wrap gap-4 items-center">
-              <a href="#contact">
-                <Button size="lg">Записаться на ближайшую встречу</Button>
-              </a>
+              <PayButton productId="club-single">
+                Оплатить встречу · 1 000 ₽
+                <CreditCard className="h-5 w-5" />
+              </PayButton>
               <div>
-                <div className="text-muted text-xs">Разовое посещение</div>
+                <div className="text-muted text-xs">Ближайший вторник</div>
                 <div className="font-display text-2xl font-semibold">
-                  500 ₽
+                  19:00
                 </div>
               </div>
             </div>

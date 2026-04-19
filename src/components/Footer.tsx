@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "./ui/Container";
 
 export function Footer() {
@@ -34,9 +35,17 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-background/10 text-xs text-background/40 flex justify-between flex-wrap gap-4">
-          <div>© {new Date().getFullYear()} Школа «Живая речь»</div>
-          <div>Все права защищены</div>
+        <div className="mt-12 pt-8 border-t border-background/10 text-xs text-background/50 flex flex-wrap gap-x-6 gap-y-3 justify-between">
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <div>© {new Date().getFullYear()} Школа «Живая речь»</div>
+            <Link href="/offer" className="hover:text-background transition">
+              Договор-оферта
+            </Link>
+            <Link href="/privacy" className="hover:text-background transition">
+              Политика конфиденциальности
+            </Link>
+          </div>
+          <div>ИП Малышев · ИНН 100122620854</div>
         </div>
       </Container>
     </footer>

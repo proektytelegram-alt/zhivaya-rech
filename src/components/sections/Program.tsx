@@ -1,6 +1,7 @@
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
-import { ArrowRight, Check, Gift, Sparkles } from "lucide-react";
+import { PayButton } from "../PayButton";
+import { ArrowRight, Check, Gift, Sparkles, CreditCard } from "lucide-react";
 
 const lessons = [
   {
@@ -198,17 +199,15 @@ export function Program() {
               </div>
 
               <div className="space-y-3">
+                <PayButton productId="course-step1" className="w-full">
+                  Оплатить 15 000 ₽ · Клуб в подарок
+                  <CreditCard className="h-5 w-5" />
+                </PayButton>
                 <a href="#contact" className="block">
-                  <Button size="lg" className="w-full">
-                    Записаться — свяжемся с вами
-                    <ArrowRight className="h-5 w-5" />
-                  </Button>
-                </a>
-                <a
-                  href="#contact"
-                  className="flex items-center justify-center gap-2 h-12 rounded-full border border-background/20 text-background hover:bg-background/5 transition text-sm font-medium"
-                >
-                  Оплатить сейчас со скидкой
+                  <button className="w-full h-12 rounded-full border border-background/20 text-background hover:bg-background/5 transition text-sm font-medium flex items-center justify-center gap-2">
+                    или записаться на консультацию
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
                 </a>
                 <p className="text-xs text-background/50 text-center mt-3">
                   Возврат 100% до 3-го занятия, если формат не подошёл
