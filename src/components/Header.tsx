@@ -15,7 +15,7 @@ export function Header() {
                 Живая речь
               </div>
               <div className="text-xs text-muted">
-                школа ораторского мастерства
+                школа ораторского мастерства и импровизации
               </div>
             </div>
           </Link>

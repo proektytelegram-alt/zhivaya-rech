@@ -9,7 +9,6 @@ import { ArrowRight, Sparkles } from "lucide-react";
 export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
   return (
     <section className="relative overflow-hidden pt-36 pb-24 grain">
-      {/* мягкие пятна-градиенты в фоне */}
       <div className="absolute top-20 -right-40 h-[500px] w-[500px] rounded-full bg-accent/20 blur-3xl pointer-events-none" />
       <div className="absolute top-60 -left-40 h-[400px] w-[400px] rounded-full bg-primary/15 blur-3xl pointer-events-none" />
 
@@ -35,18 +34,17 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
               <br />
               Без заучивания.
               <br />
-              <span className="text-primary">Без страха сцены.</span>
+              <span className="text-primary">Так, чтобы тебя слушали.</span>
             </h1>
 
             <p className="mt-8 text-lg md:text-xl leading-relaxed text-foreground/75 max-w-2xl">
-              Учим через живую практику — не теорию. Шесть недель — и ты
-              начинаешь говорить так, как хочешь: уверенно, по делу, с
-              контактом с залом.
+              Речь, которая звучит уверенно даже без подготовки. За 6 недель —
+              в переговорах, выступлениях и обычной жизни.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4 items-center">
               <Button size="lg" onClick={onStartQuiz}>
-                Пройти тест — узнать свой речевой портрет
+                Пройти тест и понять, что мешает говорить уверенно
                 <ArrowRight className="h-5 w-5" />
               </Button>
               <a
@@ -71,14 +69,14 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
             className="relative aspect-[4/5] lg:aspect-[5/6] rounded-[2.5rem] overflow-hidden shadow-2xl hidden md:block"
           >
             <Image
-              src="/img/hero.png"
-              alt="Человек выступает перед аудиторией"
+              src="/img/denis.jpg"
+              alt="Денис — основатель школы «Живая речь»"
               fill
               priority
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
           </motion.div>
         </div>
       </Container>
