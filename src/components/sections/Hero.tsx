@@ -19,7 +19,7 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-display text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] font-semibold tracking-tight hyphens-none">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] font-semibold tracking-tight break-words">
               Говори{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">свободно</span>
@@ -27,7 +27,7 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
               </span>
               .
               <br />
-              <span className="text-primary">Так, чтобы&nbsp;тебя&nbsp;слушали.</span>
+              <span className="text-primary">Так, чтобы тебя слушали.</span>
             </h1>
 
             <p className="mt-6 text-base md:text-xl leading-relaxed text-foreground/75 max-w-xl">
@@ -38,10 +38,10 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
               <Button
                 size="lg"
                 onClick={onStartQuiz}
-                className="w-full sm:w-auto text-sm sm:text-base px-5 sm:px-8 whitespace-normal leading-tight"
+                className="w-full sm:w-auto text-sm sm:text-base px-5 sm:px-8 py-4 whitespace-normal leading-tight h-auto min-h-[3.5rem]"
               >
-                <span className="text-left sm:text-center">
-                  Пройти тест — узнать речевой портрет
+                <span className="flex-1 text-left sm:text-center">
+                  Пройти тест — узнать свой речевой портрет
                 </span>
                 <ArrowRight className="h-5 w-5 flex-shrink-0" />
               </Button>
