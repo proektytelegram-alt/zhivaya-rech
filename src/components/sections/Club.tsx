@@ -28,7 +28,11 @@ export function Club() {
             </p>
 
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
-              <InfoCard icon={Calendar} label="Когда" value="1 раз в неделю" />
+              <InfoCard
+                icon={Calendar}
+                label="Когда"
+                value="Каждый вторник 19:00"
+              />
               <InfoCard
                 icon={Users2}
                 label="Группа"
