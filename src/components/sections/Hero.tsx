@@ -19,25 +19,31 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl leading-[1.05] font-semibold tracking-tight">
+            <h1 className="font-display text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] font-semibold tracking-tight hyphens-none">
               Говори{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">свободно</span>
-                <span className="absolute bottom-1 left-0 right-0 h-4 bg-accent/50 -z-0" />
+                <span className="absolute bottom-1 left-0 right-0 h-3 md:h-4 bg-accent/50 -z-0" />
               </span>
               .
               <br />
-              <span className="text-primary">Так, чтобы тебя слушали.</span>
+              <span className="text-primary">Так, чтобы&nbsp;тебя&nbsp;слушали.</span>
             </h1>
 
-            <p className="mt-6 text-lg md:text-xl leading-relaxed text-foreground/75 max-w-xl">
+            <p className="mt-6 text-base md:text-xl leading-relaxed text-foreground/75 max-w-xl">
               Речь, которая звучит уверенно даже без подготовки.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 items-center">
-              <Button size="lg" onClick={onStartQuiz}>
-                Пройти тест — узнать свой речевой портрет
-                <ArrowRight className="h-5 w-5" />
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4 sm:items-center">
+              <Button
+                size="lg"
+                onClick={onStartQuiz}
+                className="w-full sm:w-auto text-sm sm:text-base px-5 sm:px-8 whitespace-normal leading-tight"
+              >
+                <span className="text-left sm:text-center">
+                  Пройти тест — узнать речевой портрет
+                </span>
+                <ArrowRight className="h-5 w-5 flex-shrink-0" />
               </Button>
               <a
                 href="#program"
@@ -47,9 +53,9 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
               </a>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm">
-              <Metric label="Длительность" value="1 месяц · 8 занятий" />
-              <Metric label="Формат" value="офлайн, центр СПб" />
+            <div className="mt-10 grid grid-cols-3 gap-4 sm:gap-8 text-xs sm:text-sm">
+              <Metric label="Длительность" value="1 месяц" />
+              <Metric label="Формат" value="офлайн, СПб" />
               <Metric label="Старт" value="1 мая" />
             </div>
           </motion.div>
@@ -61,11 +67,11 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
             className="relative aspect-[4/5] lg:aspect-[5/6] rounded-[2.5rem] overflow-hidden shadow-2xl hidden md:block"
           >
             <Image
-              src="/img/denis.jpg"
+              src="/img/denis-hero.jpg"
               alt="Денис — основатель школы «Живая речь»"
               fill
               priority
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
@@ -79,8 +85,12 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
 function Metric({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <div className="text-xs text-muted uppercase tracking-wider">{label}</div>
-      <div className="font-display text-lg font-medium mt-1">{value}</div>
+      <div className="text-[0.65rem] sm:text-xs text-muted uppercase tracking-wider">
+        {label}
+      </div>
+      <div className="font-display text-sm sm:text-base md:text-lg font-medium mt-1 leading-tight">
+        {value}
+      </div>
     </div>
   );
 }

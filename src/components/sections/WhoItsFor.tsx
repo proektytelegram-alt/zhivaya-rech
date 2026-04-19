@@ -45,7 +45,7 @@ export function WhoItsFor() {
               <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition">
                 <s.icon className="h-6 w-6 text-primary group-hover:text-white" />
               </div>
-              <h3 className="font-display text-xl font-semibold mb-3">
+              <h3 className="font-display text-lg xl:text-xl font-semibold mb-3 leading-tight">
                 {s.title}
               </h3>
               <p className="text-muted text-sm leading-relaxed">{s.desc}</p>
