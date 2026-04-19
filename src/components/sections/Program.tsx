@@ -129,27 +129,30 @@ export function Program() {
               <div className="rounded-2xl bg-background/5 border border-background/10 p-6 mb-6">
                 <div className="flex items-baseline gap-4 mb-2">
                   <span className="text-background/40 line-through text-xl">
-                    30 000 ₽
+                    2 500 ₽/мес
                   </span>
                   <span className="text-xs bg-accent text-foreground font-semibold px-2 py-1 rounded-full">
                     −50%
                   </span>
                 </div>
-                <div className="font-display text-5xl md:text-6xl font-semibold mb-2">
-                  15 000 ₽
+                <div className="font-display text-5xl md:text-6xl font-semibold mb-2 leading-none">
+                  1 250 <span className="text-3xl md:text-4xl text-background/70">₽/мес</span>
                 </div>
                 <div className="text-background/60 text-sm mb-4">
-                  за 1 месяц · 8 занятий по 3 часа
+                  в рассрочку на 12 месяцев · без процентов и переплат
                 </div>
-                <div className="pt-4 border-t border-background/10 text-sm space-y-2">
-                  <div className="font-medium mb-1">Или частями без процентов</div>
-                  <div className="flex justify-between text-background/75">
-                    <span>2 500 ₽/мес × 6 месяцев</span>
-                    <span className="text-background/50">= 15 000 ₽</span>
+                <div className="pt-4 border-t border-background/10 text-sm space-y-1">
+                  <div className="flex justify-between text-background/80">
+                    <span className="font-medium">Или полная оплата</span>
+                    <span>
+                      <span className="text-background/40 line-through mr-2">
+                        30 000 ₽
+                      </span>
+                      <span className="font-semibold">15 000 ₽</span>
+                    </span>
                   </div>
-                  <div className="flex justify-between text-background/75">
-                    <span>1 250 ₽/мес × 12 месяцев</span>
-                    <span className="text-background/50">= 15 000 ₽</span>
+                  <div className="text-background/50 text-xs">
+                    за 1 месяц · 8 занятий по 3 часа
                   </div>
                 </div>
               </div>
@@ -200,7 +203,7 @@ export function Program() {
 
               <div className="space-y-3">
                 <PayButton productId="course-step1" className="w-full">
-                  Оплатить 15 000 ₽ · Клуб в подарок
+                  Оплатить сразу · 15 000 ₽ + клуб в подарок
                   <CreditCard className="h-5 w-5" />
                 </PayButton>
                 <a href="#contact" className="block">
