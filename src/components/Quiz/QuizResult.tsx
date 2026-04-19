@@ -15,7 +15,8 @@ export function QuizResult({
 }) {
   const a = ARCHETYPES[archetype];
 
-  const tgLink = `https://t.me/zhivayarech_bot?start=quiz_${archetype}`;
+  // TODO: заменить на t.me/zhivayarech_bot когда бот будет создан
+  const tgLink = `https://t.me/zhivayarech`;
 
   return (
     <motion.div

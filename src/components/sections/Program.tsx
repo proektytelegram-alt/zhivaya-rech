@@ -111,7 +111,7 @@ export function Program() {
                   <div className="text-background/60">Старт курса</div>
                   <div className="font-semibold text-base">1 мая</div>
                   <div className="text-background/60 mt-2">Осталось</div>
-                  <div className="font-semibold text-base">15 мест</div>
+                  <div className="font-semibold text-base">7 мест</div>
                 </div>
               </div>
 
@@ -141,10 +141,15 @@ export function Program() {
                 <div className="text-background/60 text-sm mb-4">
                   за 1 месяц · 8 занятий по 3 часа
                 </div>
-                <div className="pt-4 border-t border-background/10 text-sm">
-                  <div className="font-medium mb-1">Или в рассрочку</div>
-                  <div className="text-background/70">
-                    от 2 500 ₽/мес на 6 месяцев — без процентов
+                <div className="pt-4 border-t border-background/10 text-sm space-y-2">
+                  <div className="font-medium mb-1">Или частями без процентов</div>
+                  <div className="flex justify-between text-background/75">
+                    <span>2 500 ₽/мес × 6 месяцев</span>
+                    <span className="text-background/50">= 15 000 ₽</span>
+                  </div>
+                  <div className="flex justify-between text-background/75">
+                    <span>1 250 ₽/мес × 12 месяцев</span>
+                    <span className="text-background/50">= 15 000 ₽</span>
                   </div>
                 </div>
               </div>
@@ -154,12 +159,18 @@ export function Program() {
                 <div className="flex items-start gap-3">
                   <Gift className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-semibold mb-1">
-                      Бонус при оплате сразу
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="font-semibold">
+                        Бонус при оплате сразу
+                      </span>
+                      <span className="text-xs bg-primary text-white px-2 py-0.5 rounded-full font-medium">
+                        выгода 4 000 ₽
+                      </span>
                     </div>
                     <div className="text-sm text-background/75">
-                      Месяц Клуба импровизации в подарок — еженедельная
-                      практика, чтобы быстрее закрепить навык.
+                      Месяц Клуба импровизации (4 встречи по вторникам) в
+                      подарок параллельно с курсом — чтобы быстрее закрепить
+                      навык.
                     </div>
                   </div>
                 </div>
@@ -199,7 +210,8 @@ export function Program() {
                   </button>
                 </a>
                 <p className="text-xs text-background/50 text-center mt-3">
-                  Возврат 100% до 3-го занятия, если формат не подошёл
+                  Возврат 100% стоимости до 3-го занятия — если формат не
+                  подошёл
                 </p>
               </div>
             </div>
