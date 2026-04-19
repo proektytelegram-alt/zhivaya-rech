@@ -41,15 +41,15 @@ export function Club() {
               <InfoCard icon={MapPin} label="Место" value="Центр СПб" />
             </div>
 
-            <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-wrap gap-6 items-center">
               <PayButton productId="club-single">
-                Оплатить встречу · 1 000 ₽
+                Оплатить встречу
                 <CreditCard className="h-5 w-5" />
               </PayButton>
               <div>
-                <div className="text-muted text-xs">Ближайший вторник</div>
+                <div className="text-muted text-xs">Разовое посещение</div>
                 <div className="font-display text-2xl font-semibold">
-                  19:00
+                  1 000 ₽
                 </div>
               </div>
             </div>

@@ -38,7 +38,7 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
             </h1>
 
             <p className="mt-8 text-lg md:text-xl leading-relaxed text-foreground/75 max-w-2xl">
-              Речь, которая звучит уверенно даже без подготовки. За 6 недель —
+              Речь, которая звучит уверенно даже без подготовки. За месяц —
               в переговорах, выступлениях и обычной жизни.
             </p>
 
@@ -57,8 +57,8 @@ export function Hero({ onStartQuiz }: { onStartQuiz: () => void }) {
 
             <div className="mt-12 flex flex-wrap gap-8 text-sm">
               <Metric label="Занятие" value="3 часа живой практики" />
-              <Metric label="Длительность" value="6 недель" />
-              <Metric label="Группа" value="до 12 человек" />
+              <Metric label="Длительность" value="1 месяц · 8 занятий" />
+              <Metric label="Группа" value="до 30 человек" />
             </div>
           </motion.div>
 
