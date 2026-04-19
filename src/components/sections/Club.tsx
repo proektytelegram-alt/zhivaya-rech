@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
 import { Calendar, MapPin, Users2 } from "lucide-react";
@@ -49,17 +50,14 @@ export function Club() {
             </div>
           </div>
 
-          <div className="relative aspect-square lg:aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-foreground/5 border border-border/60">
-            {/* placeholder под фото из Гермеса */}
-            <div className="absolute inset-0 flex items-center justify-center text-muted">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🎭</div>
-                <div className="text-sm">Фото клуба импровизации</div>
-                <div className="text-xs mt-1 opacity-60">
-                  (сгенерируем через Гермеса)
-                </div>
-              </div>
-            </div>
+          <div className="relative aspect-square lg:aspect-[4/5] rounded-[2.5rem] overflow-hidden border border-border/60 shadow-xl">
+            <Image
+              src="/img/club.png"
+              alt="Клуб импровизации в действии"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
         </div>
       </Container>
